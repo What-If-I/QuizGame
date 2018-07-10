@@ -4,7 +4,7 @@
   <div class="question" v-if="!showAnswer" key="question">
     <p>{{question}}</p>
     <ul>
-        <li v-for="answer in answers" :key="answer.id"><button @click="submitAnswer(answer)" :class="{green: answer == correctAnswer}">{{answer}}</button></li>
+        <li v-for="answer in answers" :key="answer.id"><button @click="submitAnswer(answer)">{{answer}}</button></li>
     </ul>
   </div>
 
